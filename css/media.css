@@ -1,0 +1,46 @@
+/* Smart Phones And Tablets */
+
+@media (max-width: 767px)
+{
+    .header .navbar-nav { float: none; background-color: #111; }
+	.header.shrink .navbar-nav li a,
+	.header .navbar-nav li a { padding: 10px 10px; }
+    .home .overlay .title h1{letter-spacing: 5px;}
+    .about-me  .words h2{
+        margin-top: 40px;
+    }
+     
+}
+
+/* Small Screen */
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .header.shrink .navbar-nav li a{padding: 20px 5px}
+	.header .navbar-nav li a { padding: 30px 5px; }
+    
+    .about-me  .words h2{
+        margin-top: 40px;
+    }
+    
+     .my-team .member .overlay .name{
+        margin-top: 40%;
+    }
+    
+}
+
+/* Medium Screen */
+
+@media (min-width:992px) and (max-width: 1199px)
+{
+   
+    
+    
+}
+
+/* Large Screen */
+
+@media (min-width:1200px)
+{
+    
+}

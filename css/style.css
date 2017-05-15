@@ -1,0 +1,907 @@
+/*---------------------------------------------------
+   Main style stylesheet
+   project:       November -personal portfolio Template
+   Version:       1.0
+   Author:        MTthemes22
+   primary use:   Portfolio, Personal
+-----------------------------------------------------*/
+
+/*----------------------------------------------------
+body
+  +loading page
+  +navbar
+  +header section
+  +about-me section
+  +skills section
+  +my-service section
+  +my-portfolio section
+  +my-blog section
+  +testimonials section
+  +contact-me section
+  +scroll to top button
+
+------------------------------------------------------*/
+
+*{
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+           box-sizing: border-box;
+
+}
+
+body {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1px;
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+    height: 1555px;
+}
+
+.video-cont{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -555;
+}
+
+.video-bg{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -550;
+    height: auto;
+    width: auto;
+}
+
+.typed{
+    font-size: 35px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 200px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.typed-cursor{
+    font-weight: 300;
+    font-family: raleway
+}
+
+.fa {
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
+
+.heading{
+    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+    font-family: 'Dosis', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.a-btn{
+    border-radius: 33px;
+    font-weight: 700;
+    color: #444;
+}
+
+/*----------------------------------------------------
+Start Section baner
+----------------------------------------------------*/
+.baner{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.baner h1{
+    margin-bottom: 50px;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.baner .image{
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.baner a{
+    text-decoration: none;
+    color: #222;
+}
+
+.baner .image:hover{
+    box-shadow:  0 10px 30px 0 #aaa;
+}
+/*----------------------------------------------------
+end Section baner
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+Start Section home-bg
+----------------------------------------------------*/
+.home-bg{
+    height: 600px;
+    overflow: hidden;
+}
+
+.home-bg .overlay-bg{
+    background:linear-gradient(27deg,rgba(255, 255, 255, 0.35),rgba(25, 0, 0, 0.65));
+    height: 600px;
+}
+
+.home-bg .overlay-bg .title{
+    text-align: center;
+    z-index: 555;
+}
+
+.home-bg .overlay-bg .title h1{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 10px;
+    margin-top: -400px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-bg .overlay-bg .title p{
+    color: #eee;
+    line-height: 1.6em;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.home-bg .overlay-bg .title a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.home-bg .overlay-bg .title a:hover{
+    color: #aaa;
+}
+/*----------------------------------------------------
+end Section home-bg
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+Start Section Loading
+----------------------------------------------------*/
+.loading-overlay {
+  background:#222;
+  color:#fff;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:99999
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 300px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #FFF;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.6)";
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+      -webkit-animation-delay: -1.0s;
+              animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+       -webkit-transform: scale(0.0);
+               transform: scale(0.0);
+}
+
+  50% {
+       -webkit-transform: scale(1.0);
+               transform: scale(1.0);
+}
+}
+
+@keyframes bounce {
+  0%, 100% {
+              transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+  } 50% {
+              transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+  }
+}
+
+/*----------------------------------------------------
+End Section Loading
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+Start Section header
+----------------------------------------------------*/
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    border-radius: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+
+.navbar-brand {
+    height: auto;
+    display: block;
+    font-size: 28px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    letter-spacing: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #fff;
+}
+
+.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header .navbar-nav {
+    font-weight: 700;
+    margin: 0;
+    float: right;
+}
+
+.header .navbar-nav li a {
+    padding: 30px 15px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.header .navbar-nav li a:hover,
+.header .navbar-nav li a:focus{
+    background: none;
+}
+
+.header .navbar-nav li.active a {
+    color: #ccc;
+}
+
+.header .navbar-toggle {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.header .navbar-toggle .icon-bar {
+    background: #fff;
+    height: 3px;
+}
+
+.header.shrink {
+    position: fixed;
+    top: 0;
+    background: #111;
+}
+
+.header.shrink .navbar-brand {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.header.shrink .navbar-nav li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.header.shrink .navbar-nav li.active a {
+     color: #888;
+}
+
+.header.shrink .navbar-toggle {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.header.shrink .navbar-toggle .icon-bar {
+    background: #fff;
+    height: 3px;
+}
+/*----------------------------------------------------
+end Section header
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+start section home
+----------------------------------------------------*/
+.home{
+    height: 600px;
+    background-image: url('../images/pexels-photo-305241.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+
+.home .overlay{
+    background:linear-gradient(27deg,rgba(255, 255, 255, 0.35),rgba(25, 0, 0, 0.65));
+    height: 600px;
+    padding: 70px 0;
+}
+
+.home .overlay .title h1{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 10px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+.home .overlay .title p{
+    color: #eee;
+    line-height: 1.6em;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.home .overlay .title a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.home .overlay .title a:hover{
+    color: #aaa;
+}
+/*----------------------------------------------------
+end section header
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+Start Section about-me
+----------------------------------------------------*/
+.about-me{
+    padding: 70px 0;
+}
+
+.about-me .image img{
+   width: 100%;
+    height: auto;
+}
+
+.about-me .words h5{
+    color: #000;
+    line-height: 1.8em;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.profile-pic img{
+    border-radius: 50%;
+}
+
+.about-me .words p{
+    line-height: 2.5em;
+    color: #666;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*----------------------------------------------------
+end Section about-me
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+start Section skills
+----------------------------------------------------*/
+.skills {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+		width: 100%;
+		margin: 0 0 3em 0;
+		padding: 0;
+		list-style: none;
+		cursor: default;
+	}
+
+  .skills ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+		.skills li {
+			-moz-flex: 1;
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			padding: 1.5em;
+			color: #ffffff;
+			text-align: center;
+		}
+
+    .skills img {
+      width: 65%;
+    }
+
+			.skills li.skill-block1 {
+				background-color: #efa8b0;
+			}
+
+			.skills li.skill-block2 {
+				background-color: #c79cc8;
+			}
+
+			.skills li.skill-block3 {
+				background-color: #a89cc8;
+			}
+
+			.skills li.skill-block4 {
+				background-color: #9bb2e1;
+			}
+
+			.skills li.skill-block5 {
+				background-color: #8cc9f0;
+			}
+
+			.skills li strong, .skills li b {
+				display: block;
+				font-size: 2em;
+				line-height: 1.1;
+				color: inherit !important;
+				font-weight: 300;
+				letter-spacing: -0.025em;
+			}
+
+			.skills li:first-child {
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+
+			.skills li:last-child {
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+			}
+
+			.skills li .icon {
+				display: inline-block;
+			}
+
+			.skills li .icon:before {
+				font-size: 2.75rem;
+				line-height: 1.3;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			.skills li strong, .skills li b {
+				font-size: 1.5em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.skills {
+				display: block;
+				width: 25em;
+				max-width: 100%;
+				margin: 0 auto 2em auto;
+			}
+
+      .skills ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+      }
+
+			.skills li:first-child {
+				border-bottom-left-radius: 0;
+				border-top-right-radius: 8px;
+			}
+
+			.skills li:last-child {
+				border-top-right-radius: 0;
+				border-bottom-left-radius: 8px;
+			}
+
+			.skills li .icon:before {
+				font-size: 3.75rem;
+			}
+
+			.skills li strong, .skills li b {
+				font-size: 2.5em;
+			}
+
+		}
+
+/*----------------------------------------------------
+end Section skills
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+start services section
+----------------------------------------------------*/
+.services{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.services .single-service{
+    margin-bottom: 20px;
+}
+
+.services .single-service i{
+    font-size: 40px;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+
+.services .single-service:hover i{
+    transform: scale(1.2);
+    color: #444;
+    background-color: #eee;
+}
+
+.services .single-service h2{
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.services .single-service p{
+    color: #666;
+    font-size: 14px;
+    line-height: 2.5em;
+    font-family: raleway
+}
+/*----------------------------------------------------
+end services section
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+start my-portfolio section
+ ----------------------------------------------------*/
+.my-portfolio{
+    padding: 70px 0;
+    width: 100%;
+}
+
+.my-portfolio ul{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.my-portfolio ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #555;
+    padding: 5px;
+}
+
+.selected{
+    color: #bbb !important;
+    border-bottom: 1px solid #777;
+}
+
+.my-portfolio .work-area{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.my-portfolio .work-area .image img{
+    width: 100%;
+    height: auto;
+}
+
+.my-portfolio .work-area .overlay{
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(0,0,0,0.6);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+
+.my-portfolio .work-area .overlay i{
+    color: #eee;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+
+.my-portfolio .work-area:hover .overlay{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+}
+
+.my-portfolio .work-area:hover .overlay i{
+    top: 50%;
+}
+/*----------------------------------------------------
+end my-portfolio section
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+Start Testimonials Section
+----------------------------------------------------*/
+.testimonials{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.testimonials .carousel-inner .item p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2.5em;
+    font-size: 14px;
+    color: #666;
+    font-family: Raleway;
+}
+
+.testimonials .carousel-inner .item span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2.5em;
+    color: #222;
+}
+
+.testimonials .carousel-indicators{
+    bottom: -60px;
+}
+
+.testimonials .carousel-indicators li {
+    background-color: #000;
+    height: 10px;
+    width: 30px;
+    border-radius: 0;
+}
+
+.testimonials .carousel-indicators li.active{
+    background-color: #888;
+}
+
+.testimonials img{
+    text-align: center;
+    margin: 0 auto;
+}
+/*----------------------------------------------------
+End Testimonials Section
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+start my-blog Section
+----------------------------------------------------*/
+.my-blog{
+    padding: 70px 0;
+}
+
+.my-blog .blog-area{
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.my-blog .blog-area .image{
+    position: relative;
+}
+
+.my-blog .blog-area .image img{
+    width: 100%;
+    height: auto;
+}
+
+.my-blog .blog-area .image img:hover{
+    opacity: 0.55;
+}
+
+.my-blog .blog-area .title h2{
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase
+}
+
+.my-blog .blog-area .title a{
+    color: #222;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.my-blog .blog-area .title a:hover{
+    color: #888;
+}
+
+.my-blog .blog-area .title .tag{
+    color: #888;
+    font-family: 'Dosis', sans-serif;
+}
+
+.my-blog .blog-area .title p{
+    color: #555;
+    font-family: raleway;
+    line-height: 2em;
+    font-size: 14px;
+}
+/*----------------------------------------------------
+end my-blog Section
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+start contact-me Section
+----------------------------------------------------*/
+.contact-me {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.contact-form {
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    text-indent: 20px;
+    letter-spacing: 1px;
+    background-color: #f5f5f5;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 25px;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    font-weight: 600;
+    -webkit-transition:all .3s ease-in-out;
+       -moz-transition:all .3s ease-in-out;
+         -o-transition:all .3s ease-in-out;
+            transition:all .3s ease-in-out;
+    letter-spacing: 4px;
+    border-radius: 30px;
+    letter-spacing: 5px;
+}
+
+.contact-form input[type='submit']:hover {
+    background: #fff;
+    border: 1px solid rgba(31, 35, 53, 0.8);
+    color: #000;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-me i{
+    margin-top: 20px;
+    color: #111;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-me i:hover{
+    color: #888;
+}
+/*----------------------------------------------------
+end contact-me Section
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+start scroll-top div
+----------------------------------------------------*/
+#scroll-top {
+    width:40px;
+    height:40px;
+    color:#fff;
+    background-color:#444;
+    text-align:center;
+    position:fixed;
+    right:15px;
+    bottom:10px;
+    z-index:9999;
+    display: none;
+    cursor:pointer;
+    padding: 10px;
+}
+
+#scroll-top:hover {
+    background-color:#111;
+}
+
+#scroll-top i{
+    line-height: 15px;
+}
+/*----------------------------------------------------
+end scroll-top div
+----------------------------------------------------*/
