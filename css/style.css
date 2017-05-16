@@ -354,7 +354,7 @@ start section home
 ----------------------------------------------------*/
 .home{
     height: 600px;
-    background-image: url('../images/pexels-photo-305241.jpeg');
+    background-image: url('https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cw_500/MTI4OTg4OTM2ODM0OTQ3NTUw/20.gif');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position:center;
@@ -632,7 +632,7 @@ start my-portfolio section
 
 .my-portfolio ul li{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0px;
     font-size: 18px;
     cursor: pointer;
     color: #555;
@@ -688,6 +688,101 @@ start my-portfolio section
 
 .my-portfolio .work-area:hover .overlay i{
     top: 50%;
+}
+
+.row-bbbb img {
+	width: 360px;
+	display: block;
+	height: 240px;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	transition: all 500ms;
+	max-width: 100%;
+}
+
+.row-bbbb figure {
+	overflow: hidden;
+	position: relative;
+}
+
+.row-bbbb figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	height: 100%;
+  width: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.row-bbbb figcaption p {
+	display: list-item;
+	font-size: 1em;
+	position: relative;
+	top: -40px;
+  margin-left: 10px;
+  margin-right: 10px;
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;
+	vertical-align: middle;
+	margin-top: 5%;
+}
+
+.row-bbbb figcaption h4 {
+	display: list-item;
+	font-size: 1.2em;
+	position: relative;
+	top: -40px;
+  margin-left: 10px;
+  margin-right: 10px;
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;
+	vertical-align: middle;
+	margin-top: 5%;
+}
+
+.row-bbbb figcaption h4:after {
+  display: block;
+  content: '';
+  border-bottom: solid 1px #019fb6;
+  transform: scaleX(0);
+  transition: transform 500ms ease-in-out;
+	width: 50%;
+	margin-left: 25%;
+	padding-bottom: 5%;
+}
+
+
+.row-bbbb li:hover figcaption h4:after {
+	transform: scaleX(1);
+}
+
+.row-bbbb li:hover figcaption {
+	opacity: 1;
+}
+
+.row-bbbb li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.row-bbbb li:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+
+.row-bbbb li:hover figcaption h4 {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
 }
 /*----------------------------------------------------
 end my-portfolio section

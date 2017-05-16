@@ -56,14 +56,12 @@
 					<a class="navbar-brand" href="#">Taylor Chesnutt</a>
                </div>
                <nav id="myNavbar" class="navbar-collapse collapse">
-				    <ul class="nav navbar-nav">
-						<li><a href="#home">HOME</a></li>
-						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#services">SERVICES</a></li>
-						<li><a href="#portfolio">PORTFOLIO</a></li>
-						<li><a href="#blog">BLOG</a></li>
-						<li><a href="#contact">CONTACT</a></li>
-					</ul>
+    				    <ul class="nav navbar-nav">
+      						<li><a href="#home">HOME</a></li>
+      						<li><a href="#about">ABOUT</a></li>
+      						<li><a href="#portfolio">PORTFOLIO</a></li>
+      						<li><a href="#contact">CONTACT</a></li>
+    					  </ul>
                </nav>
            </div>
     </header>
@@ -75,10 +73,9 @@
             <div class="title">
                 <h2 class="typed">I Am <span class="element"></span></h2>
                 <p>A SOFTWARE ENGINEER BASE IN THE SAN FRANCISCO AREA</p>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/tchesnutt/" class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/taylorfchesnutt/" class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/kernellrubiconn" class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa fa-facebook"></i></a>
             </div>
         </div>
     </section>
@@ -147,47 +144,41 @@
                <li  class="filter" data-filter=".rails">Rails</li>
                <li  class="filter" data-filter=".react">React</li>
             </ul>
-            <div class="row bbbb" id="change" >
-                <div class="col-md-4 col-sm-6 col-xs-12  mix js react rails">
-                    <div class="work-area">
-                        <div class="image">
-                            <img alt="image" src="./images/sandcamp.png">
-                        </div>
-                        <div class="overlay">
-                            <a href="#"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 mix js react">
-                    <div class="work-area">
-                         <div class="image">
-                             <img alt="image" src="./images/find-people-hiking.gif">
-                         </div>
-                         <div class="overlay">
-                             <a href="#"><i class="fa fa-link"></i></a>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 mix js">
-                    <div class="work-area">
-                        <div class="image">
-                             <img alt="image" src="./images/upword-logo.png">
-                        </div>
-                        <div class="overlay">
-                            <a href="#"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <a href={this.props.link_url}>
-                  <figure>
-                    <img src={this.props.image}/>
-                    <figcaption>
-                      <h4>{this.props.header}</h4>
-                      <p>{this.props.text}</p>
-                    </figcaption>
-                  </figure>
-                </a>
-            </div>
+            <ul class="row-bbbb" id="change" >
+                <li class="col-md-4 col-sm-6 col-xs-12  mix js react rails">
+                    <a href=http://sandcamp.herokuapp.com/#/>
+                      <figure>
+                        <img alt="image" src="./images/sandcamp.png">
+                        <figcaption>
+                          <h4>Sandcamp</h4>
+                          <p>React/Redux frontend and Rails backend, this full-stack, RESTful, single-page web app combines the best of Bandcamp and Soundcloud. Upload, listen, and edit albums!</p>
+                        </figcaption>
+                      </figure>
+                    </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix js react">
+                  <a href=https://tchesnutt.github.io/find-people-hiking/>
+                    <figure>
+                      <img alt="image" src="./images/find-people-hiking.gif">
+                      <figcaption>
+                        <h4>Find People Hiking</h4>
+                        <p>A browser tool, using excusivly React, to find where your loved ones are in relation to a trail. Upload CRUDable points that are plotted using Google Maps API. Pick a coordinate on the map to find the closest point on the trail!</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix js">
+                  <a href=https://chrome.google.com/webstore/detail/upword-docs-addon/enejigfmcpgdbmmooajggeglbnoopkif?hl=en>
+                    <figure>
+                      <img alt="image" src="./images/upword-logo.png">
+                      <figcaption>
+                        <h4>Upword Docs Addon</h4>
+                        <p>Chrome Extension to live-swap words while typing in Chrome. Collaborated to expand extension's support to Google Docs. Add-on communicates between synonyms API Express server and Google Docs server.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- end section my-portfolio -->

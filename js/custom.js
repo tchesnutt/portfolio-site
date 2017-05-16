@@ -78,7 +78,7 @@ $(document).on('ready' ,function () {
     $(".element").typed({
         strings: [ " Taylor Chesnutt"],
         loop: false,
-        showCursor: true,
+        showCursor: false,
         startDelay: 1000,
         backDelay: 800,
         typeSpeed: 150
