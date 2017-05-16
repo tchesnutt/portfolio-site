@@ -55,6 +55,22 @@
       margin-top: 40%;
   }
 
+  .contact-sub-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 70%;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .contact-sub-container ul {
     display: flex;
     flex-direction: row;
