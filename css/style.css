@@ -431,6 +431,37 @@ Start Section about-me
     font-size: 16px;
     font-weight: 400;
 }
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    font-weight: 600;
+    -webkit-transition:all .3s ease-in-out;
+       -moz-transition:all .3s ease-in-out;
+         -o-transition:all .3s ease-in-out;
+            transition:all .3s ease-in-out;
+    letter-spacing: 4px;
+    border-radius: 30px;
+    letter-spacing: 5px;
+}
+
+.resume-button:hover {
+    background: #fff;
+    border: 1px solid rgba(31, 35, 53, 0.8);
+    color: #000;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
+    outline: 0;
+    box-shadow: none;
+}
+
 /*----------------------------------------------------
 end Section about-me
 ----------------------------------------------------*/
