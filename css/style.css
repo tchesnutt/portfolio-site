@@ -1008,13 +1008,6 @@ start contact-me Section
     color: #888;
 }
 
-.contact-sub-container ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style-type: none;
-}
-
 .contact-icon-list {
 	cursor: default;
 	list-style: none;
