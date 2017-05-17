@@ -62,7 +62,7 @@
   }
 
   .contact-form {
-    width: 70%;
+    /*width: 70%;*/
   }
 
   .contact-info {
@@ -94,7 +94,7 @@
   .contact-sub-container ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     list-style-type: none;
   }
 
@@ -115,7 +115,7 @@
   .contact-sub-container ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     list-style-type: none;
   }
 
