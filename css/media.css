@@ -1,14 +1,65 @@
 /* Smart Phones And Tablets */
 
-@media (max-width: 767px)
-{
-    .header .navbar-nav { float: none; background-color: #111; }
+@media (max-width: 767px) {
+  .header .navbar-nav { float: none; background-color: #111; }
 	.header.shrink .navbar-nav li a,
-	.header .navbar-nav li a { padding: 10px 10px; }
-    .home .overlay .title h1{letter-spacing: 5px;}
-    .about-me  .words h2{
-        margin-top: 40px;
-    }
+	.header .navbar-nav li a { padding: 10px; }
+  .home .overlay .title h1 {letter-spacing: 5px;}
+  .about-me  .words h2 { margin-top: 40px; }
+
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+/* TODO: make icons bigger under into */
+
+  .profile-pic img {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .words {
+    text-align: center;
+  }
+
+  .skills {
+    display: block;
+    width: 25em;
+    max-width: 100%;
+    margin: 0 auto 2em auto;
+  }
+
+  .skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .skills li:first-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
+
+  .skills li:last-child {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+
+  .skills li .icon:before {
+    font-size: 3.75rem;
+  }
+
+  .skills li strong, .skills li b {
+    font-size: 2.5em;
+  }
 
   .contact-sub-container {
     display: flex;
@@ -24,6 +75,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 70%;
   }
 
   .contact-sub-container ul {
@@ -32,13 +84,20 @@
     justify-content: center;
     list-style-type: none;
   }
+
+  .contact-form {
+    margin-right: 0;
+  }
+
+  .contact-info {
+    margin-right: 0;
+  }
 }
 
 /* Small Screen */
 
-@media (min-width: 768px) and (max-width: 991px)
-{
-    .header.shrink .navbar-nav li a{padding: 20px 5px}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header.shrink .navbar-nav li a {padding: 20px 5px}
 	.header .navbar-nav li a { padding: 30px 5px; }
 
   .contact-sub-container {
@@ -48,11 +107,15 @@
   }
 
   .about-me  .words h2{
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
-   .my-team .member .overlay .name{
-      margin-top: 40%;
+  .my-team .member .overlay .name{
+    margin-top: 40%;
+  }
+
+  .skills li strong, .skills li b {
+    font-size: 1.5em;
   }
 
   .contact-sub-container {
